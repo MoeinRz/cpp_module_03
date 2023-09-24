@@ -2,12 +2,12 @@
 
 ClapTrap::ClapTrap(void) : _name("Moein"), _hitpoints(10), _energypoints(10), _attackdamage(0)
 {
-    std::cout << "ClapTrap constructor called" << std::endl;
+    std::cout << "constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name) :  _name(name), _hitpoints(10), _energypoints(10), _attackdamage(0)
 {
-    std::cout << "name constructor called" << std::endl;
+    std::cout << name << " constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& copy)
