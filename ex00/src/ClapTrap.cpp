@@ -30,7 +30,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap &cp)
 {
     if (this != &cp)
     {
-        std::cout << "ClapTrap copy assignment operattor used" << std::endl;
+        std::cout << "ClapTrap copy assignment operator used" << std::endl;
         this->_name = cp._name;
         this->_hitpoints = cp._hitpoints;
         this->_energypoints = cp._energypoints;
@@ -41,7 +41,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap &cp)
 
 ClapTrap::~ClapTrap(void)
 {
-    std::cout << "ClapTrap disstructor called" << std::endl;
+    std::cout << "ClapTrap destructor called" << std::endl;
 }
 
 void    ClapTrap::attack(const std::string& target)
