@@ -21,20 +21,25 @@ int main(void)
 
 	ClapTrap clapTrap( "Mr.ClapTrap" );
 	clapTrap.setAttackDamage(5);
-
+	std::cout << "---------[1]-----------" << std::endl;
 	FragTrap fragTrap;
 	fragTrap.setName( "Mr.FragTrap" );
-
+	std::cout << "---------[3]-----------" << std::endl;
 	clapTrap.attack( "Mr.FragTrap" );
-
+	std::cout << "---------[4]-----------" << std::endl;
 	fragTrap.takeDamage( 5 );
+	std::cout << "---------[5]-----------" << std::endl;
 	fragTrap.beRepaired( 2 );
+	std::cout << "---------[6]-----------" << std::endl;
 	fragTrap.attack( "Mr.ClapTrap" );
-	
+	std::cout << "---------[7]-----------" << std::endl;
 	clapTrap.takeDamage( 30 );
 	clapTrap.setAttackDamage(7);
+	std::cout << "---------[9]-----------" << std::endl;
 	clapTrap.attack( "Mr.FragTrap" );
+	std::cout << "---------[10]-----------" << std::endl;
 	fragTrap.highFivesGuys();
+	std::cout << "---------[11]-----------" << std::endl;
 	
 
     return (0);

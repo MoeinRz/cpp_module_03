@@ -39,7 +39,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& cp)
 
 ScavTrap::~ScavTrap(void)
 {
-    std::cout << "ScavTrap " << this->_name << " destructor called" << std::endl;
+    std::cout << "ScavTrap destructor called" << std::endl;
     return ;
 }
 
@@ -57,38 +57,6 @@ void    ScavTrap::attack(const std::string& target)
         return ;
     }
     if (this->_energypoints <= 0)
-    {
-        std::cout << this->_name << " has no energy points." << std::endl;
-        return ;
-    }
-}
-
-void    ScavTrap::takeDamage(unsigned int amount)
-{
-    if (this->_hitpoints <= 0)
-    {
-        std::cout << this->_name << " is dead." << std::endl;
-    }
-    else
-    {
-        this->_hitpoints -= amount;
-        std::cout << "ScavTrap " << this->_name << " took " << amount << " points of damage!" << std::endl;
-    }
-}
-
-void    ScavTrap::beRepaired(unsigned int amount)
-{
-    if (this->_hitpoints <= 0)
-    {
-        std::cout << _name << " is dead." << std::endl;
-        return ;
-    }
-    if (this->_energypoints > 0)
-    {
-        this->_hitpoints += amount;
-        std::cout << "ScavTrap " << this->_name << " repaired by " << amount << " points." << std::endl;
-    }
-    else
     {
         std::cout << this->_name << " has no energy points." << std::endl;
         return ;
