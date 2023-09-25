@@ -20,11 +20,11 @@ int main(void)
 
 	ClapTrap clapTrap("Mr.ClapTrap");
 	clapTrap.setAttackDamage(5);
-
+	
 	ScavTrap scavTrap;
-	scavTrap.setName("Mr.ScavTrap");
+	scavTrap.setName("Ms.ScavTrap");
 
-	clapTrap.attack("Mr.ScavTrap");
+	clapTrap.attack("Ms.ScavTrap");
 
 	scavTrap.takeDamage(5);
 	scavTrap.beRepaired(2);
@@ -33,7 +33,7 @@ int main(void)
 	
 	clapTrap.takeDamage (20);
 	clapTrap.setAttackDamage(7);
-	clapTrap.attack("Mr.ScavTrap");
+	clapTrap.attack("Ms.ScavTrap");
 
     return (0);
 }
